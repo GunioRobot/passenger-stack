@@ -20,7 +20,7 @@ Go forth and install your custom configurations, add vhosts and other VPS paraph
 
 ### My app isn't running!?
 
-No superfluous configuation is included, these scripts focus purely on slice installation. 
+No superfluous configuation is included, these scripts focus purely on slice installation.
 Having said that passenger is configured to work with apache, your application should pretty much be a 'drop in' install.
 
 Read [these tips](http://github.com/benschwarz/passenger-stack/wikis/my-app-isnt-running) to get you humming
@@ -33,7 +33,7 @@ Other things you should probably consider:
 #### "Connection reset by peer"
 
 You can work around this issue by tweaking `/etc/ssh/sshd_config` to include the following on the server:
-  
+
     ClientAliveInterval 60
     ClientAliveCountMax 15
 
@@ -43,11 +43,11 @@ You can work around this issue by tweaking `/etc/ssh/sshd_config` to include the
   * Scripts and stylesheets are compressed using mod_deflate
   * ETags are applied to static assets
   * Expires headers are applied to static assets
-  
-or 
 
-* Nginx (Source)  
-  
+or
+
+* Nginx (Source)
+
 * Ruby Enterprise (Source) [includes rubygems]
 * Passenger (Rubygem)
 * Memcached (Apt)
@@ -80,4 +80,4 @@ If you're interested in using Fedora or RedHat then maybe you should checkout on
 ## Disclaimer
 
 Don't run this on a system that has already been deemed "in production", its not malicious, but there is a fair chance
-that you'll ass something up monumentally. You have been warned. 
+that you'll ass something up monumentally. You have been warned.
